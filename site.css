@@ -101,3 +101,32 @@ main {
     padding-bottom: 3em;
     min-height: 85%;
 }
+@media screen and (max-width: 768px) {
+    .logo-banner,
+    .captions,
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title,
+    .subtitle {
+        font-size: 1rem;
+        padding: 8px;
+        width: 90%;
+    }
+
+    nav ul {
+        gap: 10px;
+        padding: 0;
+    }
+
+    .logo-banner img {
+        max-height: 80px;
+    }
+
+    main {
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+}
