@@ -104,6 +104,31 @@ main {
     padding-bottom: 3em;
     min-height: 85%;
 }
+
+.banner-card {
+    position: relative;
+}
+
+.banner-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    color: white;
+    position: absolute;
+    top: 7%;
+    right: 45%;
+    left: 10%;
+    padding: 20px;
+    font-size: 1.6em;
+    text-shadow: 
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
 @media screen and (max-width: 768px) {
     .logo-banner,
     .captions,
