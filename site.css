@@ -7,7 +7,7 @@ html, body{
 }
 
 body{ 
-    background-color: #2d2d2d;
+    background-color: #180f0f;
     font-family: Arial, Helvetica, sans-serif;
     display: inline;
     text-align: center;
@@ -24,6 +24,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+h1{
+    color:#fbb019; 
 }
 
 .title {
@@ -96,7 +99,7 @@ nav a:hover {
 
 main {
     display: block;
-    background-color: white;
+    background-color:#3b3535;
     padding-top: 3em;
     padding-bottom: 3em;
     min-height: 85%;
