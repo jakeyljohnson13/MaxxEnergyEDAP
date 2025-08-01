@@ -1,0 +1,22 @@
+.faq-item {
+  border: 1px solid #e9dd30;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.faq-question {
+  font-weight: bold;
+  cursor: pointer;
+  color:#e9dd30
+}
+
+.faq-answer {
+  display: none;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
