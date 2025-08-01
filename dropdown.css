@@ -20,3 +20,16 @@
 .faq-item.active .faq-answer {
   display: block;
 }
+
+
+.image {
+  transition: transform 0.3s ease; 
+}
+
+.image:hover {
+  transform: scale(1.2); 
+}
+.follow a {
+  display: inline-block;
+  margin: 10px;
+}
