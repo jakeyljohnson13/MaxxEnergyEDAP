@@ -99,7 +99,8 @@ nav a:hover {
 
 main {
     display: block;
-    background-color:#3b3535;
+    /* background-color:#01435f; */
+    background: linear-gradient(to right, #00093c, #c26700);
     padding-top: 3em;
     padding-bottom: 3em;
     min-height: 85%;
