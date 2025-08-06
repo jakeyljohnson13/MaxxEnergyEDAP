@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+   <link rel="stylesheet" href="reset.css">
+    <title>
+        Update Password
+    </title>
+</header>
+<body>
+    <div class="reset-password-container">
+  <h2>Reset Your Password</h2>
+  <p>Please enter your new password below.</p>
+
+  <form action="/update-password" method="post">
+   
+    <input type="hidden" name="token" value="RESET_TOKEN_FROM_EMAIL">
+
+    <label for="new-password">New Password:</label>
+    <input type="password" id="new-password" name="new-password" placeholder="Enter new password" required>
+
+    <label for="confirm-password">Confirm Password:</label>
+    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm new password" required>
+
+    <button type="submit">Update Password</button>
+  </form>
+
+  <p><a href="login.html">Back to Login</a></p>
+</div>
+
+</body>
+</html>
