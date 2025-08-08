@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Access Portal</title>
+</head>
+<body>
+    <div class="logo-banner">
+        <img src="images/MAXX-Energy-Logo-1A.png" alt="Logo" class="logo-left" />
+        <div class="captions">
+            <h1 class="title">Enterprise Data Access Portal</h1>
+            <h2 class="subtitle">For All Your Maxx Energy Data Needs</h2>
+        </div>
+        <img src="images/MAXX-Energy-Logo-1A.png" alt="Logo" class="logo-right" />
+    </div>
+
+    <div class="header-content">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="socials.html">Social Media</a></li>
+            </ul>
+        </nav>
+        <div class="login">
+            <a href="login.html#login" class="login-link"><b>Login</b></a>
+             | 
+            <a href="login.html#createAccount" class="register-link"><b>Register</b></a>
+        </div>
+    </div>
+    <main>
+        <h1>Access Portal</h1>
+        <br><br>
+        <div class="loginPage">
+            <form id="createAccount">
+                <h2>Create Account</h2>
+                <br><br>
+
+                <label >First Name</label>
+                <input type="text" placeholder="" required>
+
+                <label >Last Name</label>
+                <input type="text" placeholder=""required>
+
+                <label>Email Address</label>
+                <input type="email" placeholder="" required>
+
+                <label>Create Password</label>
+                <input type="password" placeholder="" required>
+
+                <label for="Confirm Password">Confirm Password</label>
+                <input type="password" placeholder="" required>
+
+                <br> <br>
+                <input type="button" value="Create Account">
+                <br><br>
+
+                <p>By clicking the Create Account button, you agree to our <br>
+                <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></p>
+            </form>
+
+            <form id="login">
+                <h2>Log In</h2>
+                <br><br>
+
+                <label for="Username">Username</label>
+                <input type="text" id="Username" placeholder="" required>
+
+                <label for="Password">Password</label>
+                <input type="password" placeholder="" required>
+
+                <br><br>
+                <input type="button" value="Submit">
+                <br><br>
+
+                <!-- <a href="#">Forgot Username?</a> -->
+                <br>
+                <a href="reset.html">Forgot Password?</a>
+            </form>
+        </div>
+    </main>
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        const hash = window.location.hash;
+
+        if (hash === '#createAccount') {
+            document.querySelector('#createAccount input[type="text"]')?.focus();
+        } else if (hash === '#login') {
+            document.querySelector('#login input[type="text"]')?.focus();
+        }
+        });
+    </script>
+</body>

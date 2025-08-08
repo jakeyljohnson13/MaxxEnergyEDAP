@@ -38,18 +38,18 @@ textarea {
   height: 100px;
 }
 
-button {
+.contact-button {
   margin-top: 15px;
   width: 100%;
   padding: 10px;
-  background: #4CAF50;
+  background: #2df134;
   color: white;
   border: none;
   font-size: 16px;
   cursor: pointer;
 }
 
-button:hover {
+.contact-button:hover {
   background: #45a049;
 }
 

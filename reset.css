@@ -1,0 +1,61 @@
+.forgot-password-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+   background: linear-gradient(to right, #ced2e7, #f8e1c7);
+  text-align: center;
+}
+
+.forgot-password-container input {
+  width: 93%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.forgot-password-container button {
+  background: #0073e6;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.forgot-password-container button:hover {
+  background: #005bb5;
+}
+
+body{
+    background: linear-gradient(to right, #00093c, #c26700);
+}
+
+.reset-password-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: linear-gradient(to right, #ced2e7, #f8e1c7);
+  text-align: center;
+}
+
+.reset-password-container input {
+  width: 93%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.reset-password-container button {
+  background: #0073e6;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.reset-password-container button:hover {
+  background: #005bb5;
+}
