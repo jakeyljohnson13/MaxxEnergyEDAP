@@ -6,6 +6,7 @@ html, body{
     height: 100%;
 }
 
+
 body{ 
     background-color: #180f0f;
     font-family: Arial, Helvetica, sans-serif;
@@ -141,6 +142,9 @@ main {
     cursor: pointer;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
     text-decoration: none;
+}
+.get-started:hover{
+    background-color: rgb(7, 177, 78);
 }
   
 

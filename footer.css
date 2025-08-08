@@ -80,18 +80,18 @@ form input[type="email"] {
     margin-bottom: 10px;
 }
 
-form button {
+.footer-button {
     padding: 10px 20px;
-    background-color: #F9A825;
+    /* background-color: #F9A825; */
     color: #00093c;
     border: none;
-    border-radius: 4px;
+    border-radius: 50px;
     cursor: pointer;
 }
 
-form button:hover {
+/* form button:hover {
     background-color: #d38f00;
-}
+} */
 
 @media (max-width: 768px) {
     .row {
