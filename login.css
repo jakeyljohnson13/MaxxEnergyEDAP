@@ -35,3 +35,14 @@
     padding: 7px;
     border: 1px solid gray;
 }
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 4px;
+  }
+  
+  input.invalid {
+    border: 2px solid red;
+  }
+  

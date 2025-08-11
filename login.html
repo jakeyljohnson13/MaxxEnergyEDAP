@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="homepage/site.css">
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="footer.css">
     <title>Access Portal</title>
@@ -21,7 +21,7 @@
     <div class="header-content">
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="homepage/index.html">Home</a></li>
                 <li><a href="aboutUs.html">About Us</a></li>
                 <li><a href="faqs.html">FAQs</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
@@ -38,32 +38,37 @@
         <h1>Access Portal</h1>
         <br><br>
         <div class="loginPage">
-            <form id="createAccount">
+            <div id="createAccount">
                 <h2>Create Account</h2>
-                <br><br>
-
-                <label >First Name</label>
-                <input type="text" placeholder="" required>
-
-                <label >Last Name</label>
-                <input type="text" placeholder=""required>
-
-                <label>Email Address</label>
-                <input type="email" placeholder="" required>
-
-                <label>Create Password</label>
-                <input type="password" placeholder="" required>
-
-                <label for="Confirm Password">Confirm Password</label>
-                <input type="password" placeholder="" required>
-
-                <br> <br>
-                <input type="button" value="Create Account">
-                <br><br>
+                <form id="createAccountForm" novalidate>
+              
+                  <label for="firstName">First Name</label>
+                  <input type="text" id="firstName" name="firstName" required />
+                  <span class="error-message" id="firstNameError"></span>
+              
+                  <label for="lastName">Last Name</label>
+                  <input type="text" id="lastName" name="lastName" required />
+                  <span class="error-message" id="lastNameError"></span>
+              
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" required />
+                  <span class="error-message" id="emailError"></span>
+              
+                  <label for="password">Create Password</label>
+                  <input type="password" id="password" name="password" required />
+                  <span class="error-message" id="passwordError"></span>
+              
+                  <label for="confirmPassword">Confirm Password</label>
+                  <input type="password" id="confirmPassword" name="confirmPassword" required />
+                  <span class="error-message" id="confirmPasswordError"></span>
+              
+                  <button type="submit">Create Account</button>
+                  <br><br>
 
                 <p>By clicking the Create Account button, you agree to our <br>
                 <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></p>
-            </form>
+                </form>
+              </div>
 
             <form id="login">
                 <h2>Log In</h2>
@@ -85,15 +90,5 @@
             </form>
         </div>
     </main>
-    <script>
-      window.addEventListener('DOMContentLoaded', () => {
-        const hash = window.location.hash;
-
-        if (hash === '#createAccount') {
-            document.querySelector('#createAccount input[type="text"]')?.focus();
-        } else if (hash === '#login') {
-            document.querySelector('#login input[type="text"]')?.focus();
-        }
-        });
-    </script>
+    <script src="login.js"></script>
 </body>
