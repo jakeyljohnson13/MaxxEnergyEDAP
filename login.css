@@ -37,12 +37,12 @@
 }
 
 .error-message {
-    color: red;
+    color: white;
     font-size: 0.9em;
     margin-top: 4px;
   }
   
   input.invalid {
-    border: 2px solid red;
+    border: 2px solid white;
   }
   

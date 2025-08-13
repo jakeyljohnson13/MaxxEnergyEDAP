@@ -49,14 +49,18 @@
                   <label for="lastName">Last Name</label>
                   <input type="text" id="lastName" name="lastName" required />
                   <span class="error-message" id="lastNameError"></span>
+
+                  <label for="createUserName">Create Username</label>
+                  <input type="text" id="createUserName" name="createUserName" required>
+                  <span class="error-message" id="createUserNameError"></span>
               
                   <label for="email">Email Address</label>
                   <input type="email" id="email" name="email" required />
                   <span class="error-message" id="emailError"></span>
               
-                  <label for="password">Create Password</label>
-                  <input type="password" id="password" name="password" required />
-                  <span class="error-message" id="passwordError"></span>
+                  <label for="createPassword">Create Password</label>
+                  <input type="password" id="createPassword" name="createPassword" required />
+                  <span class="error-message" id="createPasswordError"></span>
               
                   <label for="confirmPassword">Confirm Password</label>
                   <input type="password" id="confirmPassword" name="confirmPassword" required />
@@ -70,24 +74,24 @@
                 </form>
               </div>
 
-            <form id="login">
+            <div id="login">
                 <h2>Log In</h2>
-                <br><br>
+                <form id="loginForm" novalidate>
 
-                <label for="Username">Username</label>
-                <input type="text" id="Username" placeholder="" required>
+                  <label for="loginUserName">Username</label>
+                  <input type="text" id="loginUserName" name="loginUserName" required>
+                  <span class="error-message" id="loginUserNameError"></span>
 
-                <label for="Password">Password</label>
-                <input type="password" placeholder="" required>
+                  <label for="loginPassword">Password</label>
+                  <input type="password" id="loginPassword" name="loginPassword" required />
+                  <span class="error-message" id="loginPasswordError"></span>
 
-                <br><br>
-                <input type="button" value="Submit">
-                <br><br>
-
-                <!-- <a href="#">Forgot Username?</a> -->
-                <br>
-                <a href="reset.html">Forgot Password?</a>
-            </form>
+                  <br><br>
+                  <button type="submit">Log In</button>
+                  <br><br>
+                  <a href="reset.html">Forgot Password?</a>
+                </form>
+            </div>
         </div>
     </main>
     <script src="login.js"></script>
