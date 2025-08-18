@@ -3,35 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link rel="icon" href="favicon-new.png" type="image/png"-->
     <link rel="stylesheet" href="site.css" type="text/css" />
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <title>Maxx Energy EDAP</title>
 </head>
 <body>
      
     <div class="logo-banner">
-            <img src="images/MAXX-Energy-Logo-1A.png" alt="Logo" class="logo-left" />
+            <img src="../images/MAXX-Energy-Logo-1A.png" alt="Logo" class="logo-left" />
             <div class="captions">
                 <h1 class="title">Enterprise Data Access Portal</h1>
                 <h2 class="subtitle">For All Your Maxx Energy Data Needs</h2>
             </div>
-            <img src="images/MAXX-Energy-Logo-1A.png" alt="Logo" class="logo-right" />
+            <img src="../images/MAXX-Energy-Logo-1A.png" alt="Logo" class="logo-right" />
         </div>
    
         <div class="header-content">
-            <nav>
+            <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+            <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutUs.html">About Us</a></li>
-                    <li><a href="faqs.html">FAQs</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="socials.html">Social Media</a></li>
+                    <li><a href="../aboutUs.html">About Us</a></li>
+                    <li><a href="../faqs.html">FAQs</a></li>
+                    <li><a href="../contact.html">Contact Us</a></li>
+                    <li><a href="../socials.html">Social Media</a></li>
                 </ul>
             </nav>
             <div class="login">
-                <a href="login.html#login" class="login-link"><b>Login</b></a>
+                <a href="../login.html#login" class="login-link"><b>Login</b></a>
                  | 
-                <a href="login.html#createAccount" class="register-link"><b>Register</b></a>
+                <a href="../login.html#createAccount" class="register-link"><b>Register</b></a>
             </div>
         </div>
         
@@ -40,13 +46,13 @@
     <div>
         <h1>Welcome</h1>
         <div class="banner-card">
-            <img src="images/AdobeStock_752637037.jpeg">
+            <img src="../images/AdobeStock_752637037.jpeg">
             <span class="banner-text">
                 <strong>The power to build a brighter future with the data to make informed decisions, we put it all at your fingertips. 
                 MAXXEnergy delivers the insights that power a cleaner tomorrow—transforming solar data into smarter decisions 
                 for a sustainable future. <br> Step inside to discover how insight becomes impact.</strong>
                 <br><br>
-                <a href="/login" class="get-started"><strong>Get Started</strong></a>
+                <a href="../login.html" class="get-started"><strong>Get Started</strong></a>
                 </span>
         </div>
     </div>
@@ -54,7 +60,7 @@
     <footer>
         <div class="row">
             <div class="col">
-                <img src="/images/logo1.png" class="logo" alt="MAXX Energy Logo" width="200">
+                <img src="../images/logo1.png" class="logo" alt="MAXX Energy Logo" width="200">
                 <p>Hello this is MAXX Energy </p>
             </div>
             <div class="col">
@@ -69,10 +75,9 @@
                 <h3>Links</h3>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutUs.html">About Us</a></li>
-                    <li><a href="faqs.html">FAQS</a></li>
-                    <li><a href="contact.html">Contacts</a></li>
-                    <li><a href="socials.html">Social Links</a></li>
+                    <li><a href="../aboutUs.html">About Us</a></li>
+                    <li><a href="../faqs.html">FAQS</a></li>
+                    <li><a href="../contact.html">Contacts</a></li>
                 </ul>
             </div>
             <div class="col">
@@ -84,5 +89,6 @@
             </div>
         </div>
     </footer>
+    <script src="home.js"></script>
 </body>
 </html>

@@ -1,0 +1,73 @@
+body {
+    margin-top: 20px;
+    background-color: #b2bfd3; /* Light blue-gray background */
+}
+
+.main {
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topbar {
+    background-color: #4A6FA5; /* Maxx Energy blue */
+    overflow: hidden;
+}
+
+.topbar a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 20px 26px;
+    text-decoration: none;
+    font-size: 26px;
+}
+
+.sidebar {/* Maxx Energy yellow */
+    color: white;
+    height: 100%;
+}
+
+.sidebar a {
+    margin-left: 10px;
+    display: block;
+    color: white;
+    padding-bottom: 10px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    background-color: white;
+    border-left: 5px solid #4A6FA5; /* Accent with blue */
+}
+
+.content img {
+    border: 3px solid #4A6FA5;  /* Blue outline */
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 150px 1fr; /* 150px for labels, rest for inputs */
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .form-row label {
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  .form-row input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
